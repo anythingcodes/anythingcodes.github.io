@@ -4,7 +4,7 @@
 	.credit { text-align: center; }
 }
 @media screen and (max-width:768px) {
-	nav{position:fixed;background:#242830;z-index:2}
+	nav,.header-inner nav{position:fixed;background:#242830;z-index:2}
 	nav ul li a{color:#fff}
 	nav ul li a:hover{color:rgba(255,255,255,0.58)}
 }

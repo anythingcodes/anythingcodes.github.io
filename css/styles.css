@@ -17,7 +17,7 @@ h1.arrow{font-size:15px;text-transform:uppercase;color:#353535;letter-spacing:1p
 /* HEADER */
 header{position:relative}
 nav { position:absolute;width:100%; /* background-color: #242830; */ margin-top: -1px; }
-.header-inner ~ nav{position:relative}
+.header-inner nav{position:relative}
 nav ul { list-style: none; padding: 0; display: table;margin: 0 auto;}
 nav ul li { color: rgba(255, 255, 255, 0.6); display: inline-block; /* border-bottom: 1px dotted rgba(255, 255, 255, 0.2); */ transition: all 0.5s ease; -moz-transition: all 0.5s ease; -webkit-transition: all 0.5s ease; -o-transition: all 0.5s ease; padding-left: 0; position: relative; }
 nav ul li:last-child { border: none; }
