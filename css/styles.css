@@ -8,6 +8,7 @@ p{color:#7A7F84;word-spacing:1px;line-height:25px;font-size:14px}
 h2{font-size:15px;color:#353535;text-transform:uppercase;font-weight:700}
 h2::after{content:" ";border:solid 2px #3dc9b3;display:block;width:35px;margin:25px auto}
 .section-padding{padding:90px 0 100px}
+.header-inner ~ .section-padding{padding-bottom:0}
 .inner{padding-top:170px}
 h1.arrow{font-size:15px;text-transform:uppercase;color:#353535;letter-spacing:1px;background:url(../img/h1-bg.png) no-repeat center bottom;padding-bottom:30px;font-weight:700;margin-bottom:70px}
 .shadow{text-shadow:#37b5a1 1px 1px,#37b5a1 2px 2px,#37b5a1 3px 3px,#37b5a1 4px 4px,#37b5a1 5px 5px,#37b5a1 6px 6px,#37b5a1 7px 7px,#37b5a1 8px 8px,#37b5a1 9px 9px,#37b5a1 10px 10px,#37b5a1 11px 11px,#37b5a1 12px 12px,#37b6a2 13px 13px,#37b7a3 14px 14px,#38b8a4 15px 15px,#38b9a5 16px 16px,#38baa6 17px 17px,#39bba7 18px 18px,#39bca8 19px 19px,#39bda9 20px 20px,#3abfaa 21px 21px,#3ac0ab 22px 22px,#3ac1ac 23px 23px,#3bc2ad 24px 24px,#3bc3ae 25px 25px,#3bc4af 26px 26px,#3cc5b0 27px 27px,#3cc6b1 28px 28px,#3cc7b2 29px 29px,#3dc9b3 30px 30px}
@@ -16,11 +17,17 @@ h1.arrow{font-size:15px;text-transform:uppercase;color:#353535;letter-spacing:1p
 /* HEADER */
 header{position:relative}
 nav { position:absolute;width:100%; /* background-color: #242830; */ margin-top: -1px; }
+.header-inner ~ nav{position:relative}
 nav ul { list-style: none; padding: 0; display: table;margin: 0 auto;}
 nav ul li { color: rgba(255, 255, 255, 0.6); display: inline-block; /* border-bottom: 1px dotted rgba(255, 255, 255, 0.2); */ transition: all 0.5s ease; -moz-transition: all 0.5s ease; -webkit-transition: all 0.5s ease; -o-transition: all 0.5s ease; padding-left: 0; position: relative; }
 nav ul li:last-child { border: none; }
 nav ul li a { color: #242830; display: block; padding: 20px; transition: all 0.5s ease; -moz-transition: all 0.5s ease; -webkit-transition: all 0.5s ease; -o-transition: all 0.5s ease; /* padding-left: 0; */ position: relative; text-transform: uppercase;}
 nav ul li a:hover, nav ul li a:focus { text-decoration: none; color: rgba(0, 0, 0, 0.58); outline: none;}
+
+/* CTA */
+.cta { background-color: #242830; padding: 70px 0; }
+.btn { display: inline-block; padding: 25px 40px; color: #fff; border: solid 1px #fff; text-transform: uppercase; font-weight: bold; letter-spacing: 1px; }
+.btn:hover, .btn:focus { color: #3dc9b3; border: solid 1px #3dc9b3; }
 
 /* HERO/BANNER */
 .hero{background:url(../img/hero-computer.jpg) no-repeat center center;-webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;background-size:cover;padding:65px 0 300px;height:auto}
