@@ -4,7 +4,7 @@
 		<title>Test iframe page</title>
 		
 		<script>
-			window.parent.postMessage("Hello From IFrame", "*");
+			window.parent.postMessage(document.domain, "*");
 		</script>
 		
 	</head>
