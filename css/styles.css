@@ -28,6 +28,8 @@ nav ul li a:hover, nav ul li a:focus { text-decoration: none; color: rgba(0, 0, 
 .cta { background-color: #242830; padding: 70px 0; }
 .btn { display: inline-block; padding: 25px 40px; color: #fff; border: solid 1px #fff; text-transform: uppercase; font-weight: bold; letter-spacing: 1px; }
 .btn:hover, .btn:focus { color: #3dc9b3; border: solid 1px #3dc9b3; }
+.btn[href="#"]{position:relative;pointer-events:none;border-color:#444;color:#666}
+.btn[href="#"]:after{content:'not yet available';font-size:.7em;text-transform:none;display:block;font-style:italic;position:absolute;bottom:1.4em;left:0;right:0}
 
 /* HERO/BANNER */
 .hero{background:url(../img/hero-computer.jpg) no-repeat center center;-webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;background-size:cover;padding:65px 0 300px;height:auto}
@@ -86,3 +88,8 @@ ul.supplemental li:last-child::after{content:""}
 .wp2,.wp5,.wp6{visibility:hidden}
 .fadeInUp,.fadeInDown{visibility:visible}
 .delay-05s{animation-delay:.5s;-webkit-animation-delay:.5s}
+
+/* CUSTOM MEDIA QUERIES */
+@media screen and (max-width:700px){
+	.cta .btn{width:100%;margin:1em 0;display:block}
+}

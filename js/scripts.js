@@ -32,7 +32,9 @@ $(document).ready(function() {
 	}, {
 		offset: '75%'
 	});
-
+	$('.cta .btn[href="#"]').click(function(e){
+		e.preventDefault();
+	});
 });
 
 /***************** Slide-In Nav ******************/
